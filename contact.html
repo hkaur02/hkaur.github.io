@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>contact form</title>
+   <link rel="stylesheet" href="css/contact.css">
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("79RentwGDeFTpUfmc");
+   })();
+</script>
+   <script src="src/contact.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="https://mattgwin29.github.io/">Previous student</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="contact.html">Contact Me!</a></li>
+        <li><a href="https://mattm401.github.io/">Course Website</a></li>
+        <li><a href="https://ad-creations.github.io/">Next student</a></li>
+     </ul>
+
+    <div class="container">
+    <h1>Contact Form</h1>
+    <br><br>
+    <form onsubmit="return false"></form>
+
+    <label for="user_fname">First Name</label>
+    <input type="text" placeholder="Enter your first name" id="user_fname" />
+    <span id="fnameValidation"></span>
+
+    <br><br>
+
+    <label for="user_lname">Last Name</label>
+    <input type="text" placeholder="Enter your last name" id="user_lname" />
+    <span id="lnameValidation"></span>
+
+    <br><br>
+
+    <label for="user_email">Email</label>
+    <input type="text" id="user_email" placeholder="xyz@domain.com" pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" title="xyz@domain.<upper-domain>" required/>
+    <span id="emailValidation"></span>
+
+    <br><br>
+
+    <label for="user_phone">Phone Number</label>
+    <input type="text" id="user_phone" placeholder="123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" title="XXX-XXX-XXXX"/>
+    <span id="phoneValidation"></span>
+    <br><br>  
+
+    <span>Enter your message</span>
+    <br><br>
+    <textarea id="user_message" rows="4"></textarea>
+    <span id="messageValidation"></span>
+    <br><br>   
+    <button onclick="sendContact();">Send contact</button>
+
+    <span id="emailStatus"></span>
+
+    <script src="src/contact.js"></script>
+    </div>
+</body>
