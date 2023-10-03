@@ -2,8 +2,9 @@
     emailjs.init("79RentwGDeFTpUfmc");
 })();
 
-document.getElementById('sendContact').addEventListener('click', function(event){
-    event.preventDefault();
+window.onload = function() {
+    document.getElementById('sendContact').addEventListener('submit', function(event) {
+        event.preventDefault();
 
     if(validateForm()){
         let user_fname = document.getElementById('user_fname').value;
@@ -38,6 +39,7 @@ document.getElementById('sendContact').addEventListener('click', function(event)
 
 
 });
+}
 
 function validateForm(){
     let isValid = true; 
