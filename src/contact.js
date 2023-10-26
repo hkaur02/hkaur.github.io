@@ -1,3 +1,6 @@
+let form = document.getElementById("contact-me");
+let form_status = document.getElementById("form_status");
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("form").addEventListener("submit", function (e) {
       e.preventDefault();
