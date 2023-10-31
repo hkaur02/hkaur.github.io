@@ -4,28 +4,133 @@
    <meta charset="UTF-8">
    <title>index</title>
    <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/aboutMe.css">
+   <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+<nav class = "navbar">
+   <a href="#homePage">Home</a>
+   <a href="#aboutMe">About Me</a>
+   <a href="#contact-me">Contact Me!</a>
+   <a href="#projects">Projects</a>
+   <div class = "dropdown">
+      <button class= "dropbutton">Class Links
+         <i class = "fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+         <a href="https://mattgwin29.github.io/">Previous student</a>
+         <a href="https://mattm401.github.io/">Course Website</a>
+         <a href="https://ad-creations.github.io/">Next student</a>
+      </div>
+   </div>
+   <button class="resume-button" onclick="window.open('Harleen_Chahal_Resume.pdf', '_blank')">View my Resume Here</button>
+</nav>
 
-<ul>
-   <li><a href="https://mattgwin29.github.io/">Previous student</a></li>
-   <li><a class="active" href="index.html">Home</a></li>
-   <li><a href="aboutMe.html">About Me</a></li>
-   <li><a href="contact.html">Contact Me!</a></li>
-   <li><a href="https://mattm401.github.io/">Course Website</a></li>
-   <li><a href="https://ad-creations.github.io/">Next student</a></li>
-</ul>
+<div class = "footer">
+   <a href="https://github.com/hkaur02" class="active">Github</a>
+   <a href="https://www.instagram.com/hkaur0824/">Instagram</a>
+   <a href="htt[s://www.linkedin.com/in/harleen-chahal">LinkedIn</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-</head>
-<body>
-   <div class="container">
-      <div class="container2">
-         <h1>Hello, my name is<h1>
-         <!--Harleen Chahal, CISC474010, Personal Web Page 1, hkaur@udel.edu-->
-         <h2>Harleen Chahal<h2>
+   <section id="homePage">
+      <div class="home">
+         <div class="container">
+            <div class="container2">
+               <h1>Hello, my name is<h1>
+               <!--Harleen Chahal, CISC474010, Personal Web Page 1, hkaur@udel.edu-->
+               <h2>Harleen Chahal<h2>
+               <h3>Aspiring Program Manager or Software Developer</h3>
+            </div>
+            <img src= "profilePic.jpg" alt= "Profile Picture" class="avatar">
          </div>
-   <img src= "profilePic.jpg" alt= "Profile Picture" class="avatar">
-<div>
-<body>
+      </div>
+   </section>
+
+   <section id="aboutMe">
+      <h1>About Me<h1>
+         <p>Hello! I am Harleen Kaur Chahal and I am currently pursuing a BS in Computer Science 
+             with a concentration in Human Computer Interaction and also a minor in Cognitive Science
+             at the University of Delaware. Tech has always been more than the software or hardware to me, it's been
+             about how it is percieved and used by us humans and I want to use my knowledge to bring social
+             good into this world.
+   
+         </p>
+         <h2>I am most interested in these aspects of web development:</h2>
+         <div>
+         <ul>
+             <li1>
+                • Visual Design •
+             </li1>
+             <li1>
+                 Interaction •
+             </li1>
+             <li1>
+                 Usability •
+             </li1>
+             <li1>
+                 Accessibility
+             </li1>
+         </ul>
+         </div>
+   </section>
+
+   <section id="projects">
+      <h1>Projects</h1>
+      <ul>
+         <h2>Algorhythm</h2>
+         <p> - An educational game for children to learn more about algorithms. My team and I worked in a React.js environment using Phaser framework
+            with Typescript, HTML, and CSS.
+         </p>
+         <h2>Interior Design Site</h2>
+         <p> - A simple way to visualize your future space created by my team in React.js environment and Node.js with Typescript, HTML, and CSS.</p>
+         <h2>NeuroNote</h2>
+         <p> - A note-taking app designed for people with ADHD in which you can take notes and have a secondary task to interact with to stay engaged in class.
+             My partner and I worked in a React.js environment and used Node.js with Javascript, HTML, and CSS.</p>
+      </ul>
+   </section>
+
+   <!-- <section id="resume">
+         <button class="resume-button" onclick="window.open('Harleen_Chahal_Resume.pdf', '_blank')">View my Resume Here</button>
+   </section> -->
+
+   <section id="contact-me">
+      <div class="contactForm">
+         <h1>Contact Form</h1>
+         <br><br>
+         <form id = "contact-me">
+     
+         <label for="user_fname">First Name</label>
+         <input type="text" placeholder="Enter your first name" id="user_fname" required/>
+     
+         <br><br>
+     
+         <label for="user_lname">Last Name</label>
+         <input type="text" placeholder="Enter your last name" id="user_lname" required/>
+     
+         <br><br>
+     
+         <label for="user_email">Email</label>
+         <input type="text" id="user_email" placeholder="xyz@domain.com" required/>
+     
+         <br><br>
+     
+         <label for="user_phone">Phone Number</label>
+         <input type="text" id="user_phone" placeholder="123-456-7890"/>
+         <br><br>  
+     
+         <span>Enter your message</span>
+         <br><br>
+         <textarea id="user_message" rows="4"></textarea>
+         <br><br>   
+         <input type="submit" id="go" class="button" value="Submit">
+         </form>
+         <p id = "form_status"></p>
+     
+     
+         <script src="src/contact.js"></script>
+      </div>
+   </section>
+</body>
 <html>
 

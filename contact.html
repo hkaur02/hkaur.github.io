@@ -10,15 +10,21 @@
    <script src="src/contact.js"></script>
 </head>
 <body>
-    <ul>
-        <li><a href="https://mattgwin29.github.io/">Previous student</a></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="aboutMe.html">About Me</a></li>
-        <li><a href="contact.html">Contact Me!</a></li>
-        <li><a href="https://mattm401.github.io/">Course Website</a></li>
-        <li><a href="https://ad-creations.github.io/">Next student</a></li>
-     </ul>
-
+    <div class = "navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contact.html">Contact Me!</a>
+        <div class = "dropdown">
+           <button class= "dropbutton">Class Links
+              <i class = "fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+              <a href="https://mattgwin29.github.io/">Previous student</a>
+              <a href="https://mattm401.github.io/">Course Website</a>
+              <a href="https://ad-creations.github.io/">Next student</a>
+           </div>
+        </div>
+     </div>
     <div class="contactForm">
     <h1>Contact Form</h1>
     <br><br>
@@ -54,4 +60,10 @@
 
     <script src="src/contact.js"></script>
     </div>
+    <div class = "footer">
+      <a href="https://github.com/hkaur02" class="active">Github</a>
+      <a href="https://www.instagram.com/hkaur0824/">Instagram</a>
+      <a href="htt[s://www.linkedin.com/in/harleen-chahal">LinkedIn</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+   </div>
 </body>
