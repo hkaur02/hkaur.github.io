@@ -8,11 +8,12 @@
    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-<nav class = "navbar">
+<div class = "navbar">
    <a href="#homePage">Home</a>
    <a href="#aboutMe">About Me</a>
    <a href="#contact-me">Contact Me!</a>
    <a href="#projects">Projects</a>
+   <a onclick="window.open('Harleen_Chahal_Resume.pdf', '_blank')">Resume</a>
    <div class = "dropdown">
       <button class= "dropbutton">Class Links
          <i class = "fa fa-caret-down"></i>
@@ -23,26 +24,23 @@
          <a href="https://ad-creations.github.io/">Next student</a>
       </div>
    </div>
-   <button class="resume-button" onclick="window.open('Harleen_Chahal_Resume.pdf', '_blank')">View my Resume Here</button>
-</nav>
+</div>
 
 <div class = "footer">
    <a href="https://github.com/hkaur02" class="active">Github</a>
    <a href="https://www.instagram.com/hkaur0824/">Instagram</a>
-   <a href="htt[s://www.linkedin.com/in/harleen-chahal">LinkedIn</a>
-   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+   <a href="https://www.linkedin.com/in/harleen-chahal">LinkedIn</a>
 </div>
 
    <section id="homePage">
       <div class="home">
          <div class="container">
-            <div class="container2">
-               <h1>Hello, my name is<h1>
+               <h1>Hello, my name is Harleen Chahal<h1>
                <!--Harleen Chahal, CISC474010, Personal Web Page 1, hkaur@udel.edu-->
-               <h2>Harleen Chahal<h2>
-               <h3>Aspiring Program Manager or Software Developer</h3>
-            </div>
+               <h2>Aspiring Program Manager or UX Designer<h2>
+            <div class = profilePic>
             <img src= "profilePic.jpg" alt= "Profile Picture" class="avatar">
+            </div>
          </div>
       </div>
    </section>
@@ -59,18 +57,10 @@
          <h2>I am most interested in these aspects of web development:</h2>
          <div>
          <ul>
-             <li1>
-                • Visual Design •
-             </li1>
-             <li1>
-                 Interaction •
-             </li1>
-             <li1>
-                 Usability •
-             </li1>
-             <li1>
-                 Accessibility
-             </li1>
+             <li>Visual Design</li>
+             <li>Interaction</li>
+             <li>Usability</li>
+             <li>Accessibility</li>
          </ul>
          </div>
    </section>
@@ -128,9 +118,13 @@
          <p id = "form_status"></p>
      
      
-         <script src="src/contact.js"></script>
+         <!-- <script src="src/contact.js"></script>
+         <script src="src/scrollft.js"></script> -->
       </div>
    </section>
+
+   <script src="src/contact.js"></script>
+   <script src="src/scrollft.js"></script>
 </body>
 <html>
 

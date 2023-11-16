@@ -3,7 +3,8 @@ body {background-color: beige;}
 .container {
     line-height: 1.5;
   display: inline-block;
-  vertical-align: left;
+  align-items: center;
+  vertical-align: center;
   text-align: left;
 }
 
